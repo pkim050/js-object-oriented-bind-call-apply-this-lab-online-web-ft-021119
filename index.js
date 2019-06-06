@@ -11,6 +11,6 @@ function setThisWithApply(fn, fn2, array) {
   return fn.apply(fn2, array);
 }
 
-function returnNewFunctionOf(fn) {
-  return fn.bind();
+function returnNewFunctionOf(fn, fn2) {
+  return fn.bind(fn2);
 }
